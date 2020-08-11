@@ -29,7 +29,7 @@ RUN /opt/conda/bin/conda config --add channels defaults && \
     /opt/conda/bin/conda update conda && \
     /opt/conda/bin/conda clean --all --yes
 
-RUN /opt/conda/bin/conda install -y -c ursky metawrap-mg && \
+RUN /opt/conda/bin/conda install -y -c ursky metawrap-mg=1.3.0 && \
     /opt/conda/bin/conda install -y blas=2.5=mkl && \
     /opt/conda/bin/conda clean --all --yes
 
